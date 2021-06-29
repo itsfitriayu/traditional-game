@@ -1,5 +1,5 @@
-# Challenge 5
-## Fitri Ayu
+# Traditional Game
+**Design from https://www.figma.com/file/njjynWhBsR33SA6YReviGS/Binar-challenge-FW-C4?node-id=0%3A1**
 
 1. Clone repository
     ```bash
