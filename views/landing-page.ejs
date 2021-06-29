@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Landing Page · Challenge 3</title>
+    <link rel="icon" href="data:image/png;base64,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">
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">     
+    <link href="https://unpkg.com/tachyons/css/tachyons.min.css" rel="stylesheet" type="text/plain">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/tachyons-animate.css" rel="stylesheet">
+    <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/all-animation.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    </head>
+
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"> </div>
+<div style="display:none;" id="myDiv" class="animate-fadein">
+  
+<!--Navigation Bar-->
+<header id="header">
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars" style="color:#fff;"></span>
+    </button>
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">LOGO</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="nav navbar-nav me-auto">
+        <li><a href="#">MAIN</a></li>
+        <li><a href="work">work</a></li>
+        <li><a href="contact">contact</a></li>
+        <li><a href="about">about me</a></li>
+      </ul>
+    <ul class="nav navbar-nav ml-auto right-nav">
+      <li><a href="#">SIGN UP</a></li>
+      <li><a href="login">LOGIN</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</header>
+
+<div class="container-fluid w-100 animation contentku">
+
+<!--Main Page-->
+<div class=" cover-container p-0 d-flex w-100 h-100 flex-column justify-content-center text-center main-page" id="main-page"
+style="background-image: url(assets/main-bg.jpg);"> 
+ <div class="container">
+   <div class="col-sm-10 offset-1 main-content">
+    <h1 class="white-text animated fadeInUp ease-out-circ d1 a-1 f2 fw3 p-0">PLAY TRADITIONAL GAME</h1>
+    <p class="white-text animated fadeInUp ease-out-circ d1 a-2 p-0">Experience new traditional game play</p>
+    <div class="lead">
+      <a href="the-game" class="pulse btn btn-lg btn-secondary fw-bold play-button">PLAY NOW</a>
+      <h6 class="white-text animated bounceIn ease-in-quad d-1 p-0">THE STORY</h6>
+      <a href="#games-page" ><img src="./assets/switch.svg" class="arrow-down-button"></a>
+    </p>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<!--Games Page-->
+<div class="section container-fluid d-flex align-items-center justify-content-center games-page" id="games-page"
+style=" background-image: url(assets/the-games-bg.jpg), radial-gradient(136.03% 54.57% at 50% 48.04%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%);"> 
+  <div class="container-fluid d-flex flex-wrap flex-lg-nowrap align-items-center justify-content-center white-text">
+  <div class="row justify-content-center content-games">
+    <div class="col-lg-11  text-games">
+    <h6 class="animated fadeInUp ease-out-circ d1 a-1 f2 fw3">What's so special?</h6></div>
+    <div class="col-lg-3  text-games">    
+      <h1 class="animated fadeInUp ease-out-circ d1 a-2">the games </h1>
+    </div>
+    <div class="col-lg-8 slide-game">
+      <div id="carouselExampleDark" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="slide1">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="slide2">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="slide3">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/rockpaperstrategy-1600.jpg" class="d-block w-100" alt="slide4">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span ><img src="./assets/switch.svg"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span ><img src="./assets/switch.svg"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!--Feature Page-->
+<div class="section container-fluid d-flex align-items-center justify-content-center feature-page" id="feature-page"
+  style="  background-image: url(assets/features.jpg), radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%);"> 
+  <div class="container-fluid flex-lg-nowrap align-items-center ">
+  <div class="row justify-content-center">
+    <div class="col-md-6"></div>
+    <div class="col-md-5 content-feature p-2">
+      <h5 class="flip-right ease-out-circ d1 a-1 f2 fw3 white-text p-0">What's so special?</h5>
+        <h1 class="flip-right ease-out-circ d2 a-2 white-text p-0">the feature</h1>
+      <div class="list-wrapper">
+
+        <div class="white-line"></div>
+        
+        <div class="list-item-wrapper">
+            <div class="list-bullet"></div>
+            <div class="list-item">
+                <div class="list-title yellow-text p-0 flip-right ease-out-circ d2 a-2 ">TRADITIONAL GAMES</div>
+                <p class="list-text white-text p-0 flip-right ease-out-circ d2 a-2 ">If you miss your childhood, we provide many traditional games here </p>
+            </div>
+        </div>
+        <div class="list-item-wrapper">
+            <div class="list-bullet"></div>
+            <div class="list-item">
+                <div class="list-title yellow-text p-0 flip-right ease-out-circ d2 a-2 ">GAME SUIT</div>
+              </div>
+        </div>
+        
+        <div class="list-item-wrapper">
+            <div class="list-bullet"></div>
+            <div class="list-item">
+                <div class="list-title yellow-text p-0 flip-right ease-out-circ d2 a-2 ">TBD</div></div>
+        </div>
+        
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+<!--Require Page-->
+<div class="section container-fluid d-flex justify-content-center require-page" id="require-page"
+  style="  background-image: url(assets/requirements.png), radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%) ;"> 
+  <div class="container-fluid d-flex flex-wrap flex-lg-nowrap justify-content-center">
+    <div class="container-fluid ">
+      <div class="col-lg-10 content-question P-0">
+        <h3 class="animated fadeInUp ease-out-circ d1 a-2 white-text align-items-center justify-content-center">Can My Computer Run this game?</h3>
+      </div>
+      <div class="col-lg-5 content-require m-0 p-0">
+          <h1 class="animated fadeInUp ease-out-circ d1 a-2 white-text m-0">system <br>requirements</h1>
+          <div class="row m-0 p-0 folder white-text">
+              <img src="./assets/folder.png">
+                <div class="row inside-folder p-0">
+                  <div class="col-sm-6 p-0">
+                    <h4 class="yellow-text p-0">OS:</h4>
+                    <p>Windows 7 64-bit only<br>(No OSX support at this time)</p>
+                  </div>
+            
+                  <div class="col-sm-6 p-0">
+                    <h4 class="yellow-text p-0">PROCESSOR:</h4>
+                    <p>Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+                  </div>
+                  <div class="col-sm-6 p-0">
+                    <h4 class="yellow-text p-0">mEMORY:</h4>
+                    <p>4 GB RAM</p>
+                  </div>
+                  <div class="col-sm-6 p-0">
+                    <h4 class="yellow-text p-0">storage:</h4>
+                    <p>8 GB available space</p>
+                  </div>
+                  <div class="col-sm-10 p-0">
+                    <h4 class="yellow-text p-0">GRAPHICS:</h4>
+                    <p>NVIDIA GeForce GTX 660 2GB or 
+                      AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</p>
+                  </div>
+              </div>
+              
+            </div>
+            
+      </div>
+      <div class="col-lg-5"></div>
+      </div>
+    </div>
+ </div>
+
+
+<!--Score Page-->
+<div class="section container-fluid d-flex w-100 h-100 score-page" id="score-page"
+  style="background-image: url(assets/bg\ image\ 5.png), radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%);"> 
+  <div class="container-fluid flex-wrap flex-lg-nowrap justify-content-center">
+  <div class="row w-100 justify-content-center align-items-center content-score">
+    <div class="col-md-4 h-100 justify-content-center ">
+      <h1 class="animated fadeInUp ease-out-circ d1 a-2 white-text p-0 ">TOP SCORES</h1>
+      <p class="animated fadeInUp white-text p-0 ">This top score from various games provided on this platform</p>
+    <a href="top-score" class="pulse-slow btn btn-lg btn-secondary fw-bold more-button">See More</a>
+    </div>
+    <div class="col-md-7 ">
+      <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-8">
+            <div class="card box1 m-0 flip-left">
+              <div class="row card-body m-0">
+                <div class="col-lg-2 avatar">
+                  <a><img src="./assets/avatar.png" class="w-100 rounded-circle "></a>
+                </div>
+                <div class="col-md-9 align-items-center justify-content-center">
+                  <div class="row mt-1">
+                    <div class="col-lg-12">
+                      <h4 class="card-title yellow-text m-0 p-0">Evan Lahti</h4>
+                    </div>
+                    <div class="col-sm-12 title m-0 ">
+                      <p class="card-text white-text p-0 m-0">PC Gamer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <a href="https://twitter.com/" target="blank"><img src="./assets/twitter.svg"></a>
+                </div>
+                <p class="card-text white-text p-0">“One of my gaming highlights of the year.”</p>
+                <h6 class="card-text white-text p-0">October 18, 2018</h6>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8 mt-3">
+            <div class="card box2 m-0 flip-left">
+              <div class="row card-body m-0">
+                <div class="col-lg-2 avatar">
+                  <a><img src="./assets/avatar2.png" class="w-100 rounded-circle "></a>
+                </div>
+                <div class="col-md-9 align-items-center justify-content-center">
+                  <div class="row mt-1">
+                    <div class="col-lg-12">
+                      <h4 class="card-title yellow-text m-0 p-0">Jada Griffin</h4>
+                    </div>
+                    <div class="col-sm-12 title m-0 ">
+                      <p class="card-text white-text p-0 m-0">Nerdreactor</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <a href="https://twitter.com/" target="blank"><img src="./assets/twitter.svg"></a>
+                </div>
+                <p class="card-text white-text p-0">“The next big thing in the world of streaming and survival games.” </p>
+                <h6 class="card-text white-text p-0">December 21, 2018</h6>
+              </div>
+            
+          </div>
+        </div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-9 mt-3">
+            <div class="card box3 m-0 flip-left">
+              <div class="row card-body m-0">
+                <div class="col-lg-2 avatar">
+                  <a><img src="./assets/avatar3.png" class="w-100 rounded-circle "></a>
+                </div>
+                <div class="col-md-9 align-items-center justify-content-center">
+                  <div class="row mt-1">
+                    <div class="col-lg-12">
+                      <h4 class="card-title yellow-text m-0 p-0">Aaron Williams </h4>
+                    </div>
+                    <div class="col-sm-12 title m-0 ">
+                      <p class="card-text white-text p-0 m-0">Uproxx </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1">
+                  <a href="https://twitter.com/" target="blank"><img src="./assets/twitter.svg"></a>
+                </div>
+                <p class="card-text white-text p-0">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
+                <h6 class="card-text white-text p-0">December 24, 2018</h6>
+              </div>
+            </div>
+        </div>
+     
+      
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+<!--Newsletter Page-->
+<div class="section container-fluid d-flex w-h-100 news-page" id="news-page"
+style="background: #080A0B;"> 
+  <div class="container-fluid flex-wrap flex-lg-nowrap justify-content-center">
+    <div class="row w-h-100 justify-content-center align-items-center">
+    <div class="col-md-5 justify-content-center align-items-center artefak">
+        <img src="./assets/candi.png">
+    </div>
+    <div class="col-md-5 content-news ">
+      <div class="row">
+        <div class="col-md-12 text-news">
+          <h6 class="animated fadeInUp ease-out-circ d1 a-1 f2 fw3 white-text p-0">Want to stay in touch?</h6>
+          <h1 class="animated fadeInUp ease-out-circ d1 a-2 white-text m-0 p-0">newsletter SUBSCRIBE<span class="yellow-text m-0 p-0"><b>.</b></span></h1>
+          <p class="animated fadeInUp ease-out-circ d1 a-2 white-text m-0 p-0">In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.</p>
+        </div>
+        <div class="col-md-12 P-1">
+          <form>
+            <input id="email" type="email" placeholder="Your email address">
+            <input id="submit" type="submit" value="Subscribe Now">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10 footer">
+      <div id="footer-menu" class="align-items-right float-right menunya">
+        <ul>
+          <li><a href="#main-page">MAIN</a></li>
+          <li><a href="#games-page">about</a></li>
+          <li><a href="#feature-page">game feature</a></li>
+          <li><a href="#require-page">System requirements</a></li>
+          <li><a href="#score-page">quotes</a></li>
+          <li><a class="icon fa fa-facebook" style="color:#fff;" title="Facebook" href="http://facebook.com/" target="blank"></a></li>
+          <li><a class="icon fa fa-twitter" style="color:#fff;" title="Twitter" href="https://twitter.com/" target="blank"></a></li>
+          <li><a class="icon fa fa-youtube-play " style="color:#fff;" title="YouTube" href="http://youtube.com/" target="blank"></a></li>
+          <li><a class="icon fa fa-twitch" style="color:#fff;" title="Twitch" href="https://www.twitch.tv/" target="blank"></a></li>
+        </ul>
+        </div>
+        <hr>
+        <p>
+          <span>
+            <h3 class="white-text copy"> © 2018 Your Games, Inc. All Rights Reserved</h3>
+          </span> 
+          <span>
+            <h3 class="white-text coc"> 
+              <p>
+                <a href="#news-page"> Code of Conduct</a>
+                <a> | </a>
+                <a href="#news-page"> Terms of Services</a>
+                <a> | </a>
+                <a href="#news-page"> Privacy Policy</a>
+              </p>
+          </span>
+        </p>
+        
+
+
+    </div>
+      </div>
+    </div>
+ </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 900);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+function mynavbar() {
+  var x = document.getElementById("NavbarTogglerDemo02");
+  if (x.className === "NavbarTogglerDemo02") {
+    x.className += " responsive";
+  } else {
+    x.className = "NavbarTogglerDemo02";
+  }
+}
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script rel="stylesheet" href="./js/owl.carousel.min.js"></script>
+
+<script src="https://kit.fontawesome.com/cb69af9304.js" crossorigin="anonymous"></script>
+</body>
+</html>

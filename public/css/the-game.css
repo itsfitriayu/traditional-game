@@ -1,0 +1,142 @@
+/*
+==================================================
+MY CSS SITEMAP >>>>
+  01. PAGE
+  02. TITLE
+  03. MAIN GAME
+==================================================*/
+
+
+/* 01. PAGE */
+html,
+body {
+  background-color: #9C835F;
+  font-family: "Open Sans", Arial;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #ffae00;
+  background: #553919;
+}
+
+::selection {
+  color: #ffae00;
+  background: #553919;
+  ;
+}
+
+
+/* 02. TITLE */
+header{
+  margin-top: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  color: #F9B23D;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+
+/* 03. MAIN GAME */
+.box {
+  text-align: center;
+}
+
+.result {
+  text-align: center;
+}
+
+input {
+  color: none !important;
+}
+
+.figure {
+  height: 8rem;
+  text-align: center;
+}
+
+.chosen {
+  background-color: #C4C4C4;
+  border-radius: 1rem;
+}
+
+.choice-hover:hover {
+  transform: scale(1.2);
+}
+
+.image_title, .choice-player,.choice-com {
+  max-width: 5rem;
+  height: auto;
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  margin-bottom: 1rem;
+  vertical-align: middle;
+}
+
+.user_text {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.vs {
+  color: #BD0000;
+  font-size: 6rem;
+  font-weight: bolder;
+  font-family: sans-serif;
+  display: block;
+  margin-top: 12.5rem;
+  margin-bottom: 3rem;
+}
+
+.win-player,
+.win-com,
+.draw {
+  color: white;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  margin-top: 10rem;
+  border-radius: 10px;
+  transform: rotate(-28.87deg);
+  padding-top: 2.5rem;
+  margin-bottom: 10rem;
+  
+}
+
+.win-player,
+.win-com {
+  background-color: #4C9654;
+}
+
+.draw {
+  display: none;
+  background-color: #035B0C;
+}
+
+.refresh {
+  text-align: center;
+}
+
+.refresh-btn {
+  max-width: 3rem;
+  height: auto;
+  cursor: pointer;
+}
+
+

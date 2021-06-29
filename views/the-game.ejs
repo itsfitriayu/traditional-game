@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title Bar -->
+  <title>Rock Paper Scissor · Challenge 4</title>
+  <link rel="shortcut icon" href="assets/logo.svg">
+
+  <!-- Bootstrap CSS, Animation, Others -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/tachyons-animate.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/the-game.css">
+</head>
+
+<body>
+  <div class="container-fluid w-100 h-100">
+    <!-- Title -->
+    <header>
+      <div class="row px-3">
+        <div class="col flex-container animated fadeInLeft a-1">
+          <a href="/" class="pt-3"><img class="image_title px-1" src="assets/_.svg"></a>
+          <img class="image_title" src="assets/logo.svg">
+          <h3 class="title">
+            Rock Paper Scissors
+          </h3>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Game -->
+    <main class="row justify-content-center animated fadeIn d-1">
+      
+      <!-- Player Box -->
+      <div class="col-sm-3 box">
+        <h3 class="user_text">Player 1</h3>
+        <div class="row justify-content-center">
+          <figure class="col-md-7 pt-2 figure" id="rock">
+            <input type="image" src="assets/rock.png" class="choice-player choice-hover" onclick="getChoice(0)"
+              style="cursor: pointer;">
+          </figure>
+          <figure class="col-md-7 figure" id="paper">
+            <input type="image" src="assets/paper.png" class="choice-player choice-hover" onclick="getChoice(1)"
+              style="cursor: pointer;">
+          </figure>
+          <figure class="col-md-7 figure" id="scissors">
+            <input type="image" src="assets/scissors.png" class="choice-player choice-hover" onclick="getChoice(2)"
+              style="cursor: pointer;">
+          </figure>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="col-md-2 ml-3 mr-3 result">
+        <div class="row justify-content-center">
+          <div class="col vs" id="vs" style="display: block;">
+            <p>
+              VS
+            </p>
+          </div>
+          <div class="col win-player" id="win-player" style="display: none;">
+            <p>
+              PLAYER 1
+            </p>
+            <p>
+              WIN
+            </p>
+          </div>
+          <div class="col win-com" id="win-com" style="display: none;">
+            <p>
+              COM
+            </p>
+            <p>
+              WIN
+            </p>
+          </div>
+          <div class="col draw" id="draw" style="display: none;">
+            <p>
+              DRAW
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- COM Box -->
+      <div class="col-sm-3 com">
+        <h3 class="user_text">com</h3>
+        <div class="row justify-content-center">
+          <figure class="col-md-7 figure" id="com-rock">
+            <img src="assets/rock.png" alt="Rock" class="choice-com">
+          </figure>
+          <figure class="col-md-7 figure" id="com-paper">
+            <img src="assets/paper.png" alt="Paper" class="choice-com">
+          </figure>
+          <figure class="col-md-7 figure" id="com-scissors">
+            <img src="assets/scissors.png" alt="Scissors" class="choice-com">
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    <!-- Refresh -->
+    <section class="row refresh animated fadeIn d-1">
+      <figure onclick="refreshGame()" class="col">
+        <img src="assets/refresh.png" class="refresh-btn">
+      </figure>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
+  <script src="js/the-game.js"></script>
+
+</body>
+
+</html>
