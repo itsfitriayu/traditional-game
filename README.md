@@ -3,7 +3,7 @@
 
 1. Clone repository
     ```bash
-    git clone https://gitlab.com/binar-fullstack-web-bootcamp-wave-10/chapter-5/challenge/fitri
+    git clone https://github.com/itsfitriayu/traditional-game.git
 
     cd fitri
     ```
@@ -13,7 +13,7 @@
     npm install
     ```
 3. Jalankan proyek dengan perintah
-    ```
+    ```bash
     npm run start
     ```
 4. Menggunakan browser, akses proyek di `http://localhost:8000`
