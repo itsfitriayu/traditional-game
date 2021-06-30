@@ -1,4 +1,5 @@
 # Traditional Game
+Figma to HTML, CSS, js, then HTML to ejs
 ## Credit
 **Design from https://www.figma.com/file/njjynWhBsR33SA6YReviGS/Binar-challenge-FW-C4?node-id=0%3A1**
 
