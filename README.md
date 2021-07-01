@@ -29,4 +29,4 @@ Figma to HTML, CSS, js, then HTML to ejs
 | :--------------: |-------------------|
 |        /         |Halaman Utama      |
 |    /the-game     |Halaman game       |
-|      login       |Halaman login user |
+|     /login       |Halaman login user |
