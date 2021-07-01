@@ -9,7 +9,7 @@ Figma to HTML, CSS, js, then HTML to ejs
     ```bash
     git clone https://github.com/itsfitriayu/traditional-game.git
 
-    cd fitri
+    cd traditional-game
     ```
 
 2. Install dependencies
