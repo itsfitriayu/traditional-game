@@ -16,14 +16,14 @@ Figma to HTML, CSS, js, then HTML to ejs
     ```bash
     npm install
     ```
-3. Jalankan proyek dengan perintah
+3. Run it
     ```bash
     npm run start
     ```
-4. Menggunakan browser, akses proyek di `http://localhost:8000`
+4. With browser access, access on `http://localhost:8000`
 
 
-## Halaman yang tersedia
+## Available Pages
 
 |    Route/URL     |     Keterangan    |
 | :--------------: |-------------------|
