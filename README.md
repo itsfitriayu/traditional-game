@@ -20,7 +20,7 @@ Figma to HTML, CSS, js, then HTML to ejs
     ```bash
     npm run start
     ```
-4. With browser access, access on `http://localhost:8000`
+4. With browser access, access on [http://localhost:8000](http://localhost:8000)
 
 
 ## Available Pages
